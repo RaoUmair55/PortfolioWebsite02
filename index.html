@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portflio Website</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style/navnar.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us </a></li>
+          <li><a href="projects.html">Projcts</a></li>
+          <li><a href="#">services</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Portflio</a></li>
+          <li class="hideOnMobile"><a href="index.html">Home</a></li>
+          <li class="hideOnMobile"><a href="about.html">About Us</a></li>
+          <li class="hideOnMobile"><a href="contact.html">Contact Us</a></li>
+          <li class="hideOnMobile"><a href="projects.html">Projcts</a></li>
+          <li class="hideOnMobile"><a href="#">services</a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <div class="main-content" >
+            <div class="text">
+                <span style="font-size: 2rem;">Hello</span><h1 id="greeting">HELLO </h1>
+                <p>My name is Rao Umair Ahmed</p>
+                <p>I am a Web Developer</p>
+                <ul>
+                    <li><i class="fa-brands fa-github"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                </ul>
+                <div>
+                    <button>Read More</button>
+                    <button>Download CV</button>
+                </div>
+               
+            </div>
+            <div class="pic">
+                <div class="img-border">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/free-avatar-icon-download-in-svg-png-gif-file-formats--user-boy-avatars-flat-icons-pack-people-456322.png?f=webp&w=256" alt="Image">
+            </div>
+            </div>
+        </div>
+      </main>
+
+
+      <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 Your Website Name. All rights reserved.</p>
+            <p>Follow us on social media: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+        </div>
+    </footer>
+    
+
+
+
+
+      <script src="script.js" ></script>
+
+</body>
+</html>

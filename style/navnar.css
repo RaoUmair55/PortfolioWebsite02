@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+/* :root { */
+    /* --main-bg-color: #2c2c54; Dark Hogwarts background */
+   /* / --accent-color: #8a5a44; Gryffindor-inspired accent */
+    /* --secondary-color: #f6e58d; Golden hues for light text */
+    /* --hover-color: #f0932b; Lighter gold for hover effect */
+    /* --text-color: #ffffff; Text color */
+    /* --shadow-color: rgba(80, 79, 79, 0.267); Darker shadow for magical feel */
+/* } */
+
+:root {
+  --background-color: #e7e7b7; /* Light beige background (old parchment) */
+  --primary-color: #9B3C3C; /* Deep burgundy (Gryffindor red) */
+  --secondary-color: #FFD700; /* Gold for accents */
+  --text-color: #333; /* Dark gray text */
+  --nav-background: #8fafccad; /* Original navigation background */
+  --button-background: #9B3C3C; /* Button color */
+  --button-hover-background: #FFD700; /* Button hover color */
+  --img-border-color: #8FAFCC; /* Border color for images */
+  --footer-bg: #2A2A2A; /* Footer background color */
+  --footer-text-color: #FFFFFF; /* Footer text color */
+  --footer-link-color: #D3A041; /* Footer link color */
+  --footer-hover-color: #F0C040; /* Footer link hover color */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+  background-color: var(--nav-background);    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px var(--shadow-color);
+    margin: 9px 20px;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 40px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    border-radius: 10px;
+    transition: all 1s ease;
+}
+
+nav a:hover {
+  background-color: #f0f0f0;
+  border: 1px solid gray;
+
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+nav li:first-child :hover {
+    background-color: transparent;
+    border: none;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px var(--shadow-color);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
+
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+
+/* Footer */
+.footer {
+  background-color: #2A2A2A; /* Dark background color */
+  color: white; /* Text color */
+  text-align: center; /* Center align text */
+  padding: 20px; /* Padding around the footer */
+  position: relative; /* Position relative for proper layout */
+  bottom: 0; /* Position at the bottom */
+  width: 100%; /* Full width */
+}
+
+.footer-content {
+  max-width: 1200px; /* Max width for content */
+  margin: 0 auto; /* Center content */
+  display: flex; /* Flexbox for alignment */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center align items */
+}
+
+.footer p {
+  margin: 5px 0; /* Margin for spacing */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .footer-content {
+      flex-direction: column; /* Stack items vertically on small screens */
+  }
+}

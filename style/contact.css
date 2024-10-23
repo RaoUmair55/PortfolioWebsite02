@@ -1,0 +1,89 @@
+:root {
+    --background-color: #e7e7b7; /* Light beige background (old parchment) */
+    --primary-color: #9B3C3C; /* Deep burgundy (Gryffindor red) */
+    --secondary-color: #FFD700; /* Gold for accents */
+    --text-color: #333; /* Dark gray text */
+    --nav-background: #8fafccad; /* Original navigation background */
+    --button-background: #9B3C3C; /* Button color */
+    --button-hover-background: #FFD700; /* Button hover color */
+    --input-border-color: #8FAFCC; /* Border color for inputs */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.contact-content {
+    width: 50%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--input-border-color);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+}
+
+.submit-button {
+    background-color: var(--button-background);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: var(--button-hover-background);
+}
+
